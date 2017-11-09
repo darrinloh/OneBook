@@ -21,10 +21,13 @@ public class ModeCommand extends Command {
     public CommandResult execute() {
         Scene scene = MainWindow.getScene();
         AddressPanel addressPanel = MainWindow.getAddressPanel();
+        //MainWindow mainWindow = new MainWindow();
         if (scene.getStylesheets().contains(DARK_MODE)) {
             scene.getStylesheets().remove(DARK_MODE);
             scene.getStylesheets().add(LIGHT_MODE);
             addressPanel.setDefaultPage();
+
+
 
         } else {
             scene.getStylesheets().remove(LIGHT_MODE);

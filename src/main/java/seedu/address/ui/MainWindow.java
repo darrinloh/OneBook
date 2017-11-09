@@ -156,7 +156,6 @@ public class MainWindow extends UiPart<Region> {
     void fillInnerParts() {
         addressPanel = new AddressPanel();
         addressPlaceholder.getChildren().add(addressPanel.getRoot());
-        addressPanel.setDefaultPage();
 
         personListPanel = new PersonListPanel(logic.getFilteredPersonList());
         personListPanelPlaceholder.getChildren().add(personListPanel.getRoot());
@@ -181,6 +180,7 @@ public class MainWindow extends UiPart<Region> {
     private void setTitle(String appTitle) {
         primaryStage.setTitle(appTitle);
     }
+
 
     //@@author frozventus
     private void setListDisplay() {
